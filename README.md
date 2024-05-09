@@ -132,10 +132,10 @@ _Maps_
 ---------------------------------------
 
 
-**for(String item: friut){   
+**for(String item: fruit){   
 System.out.println(item);
 }**
-^^// advanced for loop
+<<// advanced for loop
 -------------------------------------
 fruit.forEach(x -> System.out.println(x)); // enhanced for each loop 
 

@@ -130,9 +130,12 @@ _Maps_
   System.out.println(i.next())} // This will work on any collection: List/Set/Queue
 
 ---------------------------------------
-for(String item: friut){   // advanced for loop
+
+
+**for(String item: friut){   
 System.out.println(item);
-}
+}**
+^^// advanced for loop
 -------------------------------------
 fruit.forEach(x -> System.out.println(x)); // enhanced for each loop 
 

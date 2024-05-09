@@ -52,8 +52,8 @@ _Common Frameworks:_
 - **Lists:** Ordered elements which can be accessed by posistions
 -** Queue:** Ordered elements for processing Access in the order elements  were added "FIFO"
 - **Map:** Unordered unique key - value pairs.
-
-_-Set:_
+  
+_Set:_
 Examples: HashSet, LinkedHashSet, and TreeSet**
 - Use the add method to add
 - Duplicates will not be stores
@@ -68,7 +68,7 @@ Examples: HashSet, LinkedHashSet, and TreeSet**
 - .size : Returns the number of elements in the collection
 - - List.Of - you can add multiple objects, but it becoomes unchangeable list
 
-_**- Lists: **_
+_Lists_
 - Lists are ordered
 - Just like arrays the index starts at zero
 - Elemts stay in the order you add them
@@ -123,3 +123,28 @@ _Maps_
 
 ----------------------------------------------------------------------------------------------------------------
 # 12B NOTES
+**Looping through Collections**
+- The iterator
+- var i = iterator()
+  while(i.hasNext()){
+  System.out.println(i.next())} // This will work on any collection: List/Set/Queue
+
+---------------------------------------
+for(String item: friut){   // advanced for loop
+System.out.println(item);
+}
+-------------------------------------
+fruit.forEach(x -> System.out.println(x)); // enhanced for each loop 
+
+OR
+
+fruit.forEach(System.out::println) // shorthand version
+
+----------------------------------------------------------
+**Looping through Maps**
+
+for(var entry: fruitCalories.entrySet()){
+System.out.println(entry.getValues()); // Make sure you map has Key and Value
+}
+
+fruitCalories.forEach((k,v) -> System.out.println("Fruit: " + k + "Calories: " + v);
